@@ -28,5 +28,7 @@ module NotificationSample
     config.api_only = true
     config.enable_dependency_loading = true
     config.autoload_paths += %W(#{config.root}/lib)
+
+    require "faraday/controller_runtime"
   end
 end
