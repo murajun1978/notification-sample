@@ -33,7 +33,7 @@ module Faraday
       def duration_color(payload_duration)
         display_duration = "%.1fms" % payload_duration
         display_color    = payload_duration >= 1500 ? RED : GREEN
-        color(payload_duration, display_color, true)
+        color(display_duration, display_color, true)
       end
   end
 end
